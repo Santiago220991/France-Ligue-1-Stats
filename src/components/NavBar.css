@@ -1,0 +1,26 @@
+html{
+    box-sizing: border-box;
+    background-color: #4369b2;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+.headerbtn{
+    width: 21px;
+    height: 25px;
+}
+
+.title{
+    font-size: 25px;
+    flex-grow: 0.7;
+    text-align: center;
+    color: white;
+    font-family: 'Gill Sans', sans-serif;
+    font-weight: bolder;
+}
