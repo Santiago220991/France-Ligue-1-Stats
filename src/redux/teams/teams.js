@@ -1,11 +1,13 @@
-GET_TEAMS="GET_TEAMS";
-initState=["hola mundo"];
+const GET_TEAMS = 'GET_TEAMS';
+const initState = ['hola mundo'];
 
-const TeamsReducer=(state=[], action)=>{
-    switch(action.type){
-        case GET_TEAMS:
-            return [...state, action.payload]
-        default:
-            return state
-    }
-}
+const TeamsReducer = (state = initState, action) => {
+  switch (action.type) {
+    case GET_TEAMS:
+      return [...state, action.payload];
+    default:
+      return state;
+  }
+};
+
+export default TeamsReducer;
