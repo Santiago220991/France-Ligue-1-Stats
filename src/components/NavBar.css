@@ -1,8 +1,3 @@
-html{
-    box-sizing: border-box;
-    background-color: #4369b2;
-}
-
 .navbar{
     display: flex;
     align-items: center;

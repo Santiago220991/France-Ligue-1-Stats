@@ -1,0 +1,17 @@
+.league-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+.league-logo{
+    height: 200px;
+    width: 150px;
+}
+
+.season{
+    font-size: 1.2rem;
+    color: white;
+}
