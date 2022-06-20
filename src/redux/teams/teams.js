@@ -30,7 +30,9 @@ export const GetTeamsAPI = () => async (dispatch) => {
     localStorage.setItem('statics', JSON.stringify(TeamsList));
     dispatch(GetTeams(TeamsList));
   } else {
-    dispatch(GetTeams(localStorage.getItem('statics')));
+    let TeamsList = localStorage.getItem('statics');
+    TeamsList = JSON.parse(TeamsList);
+    dispatch(GetTeams(TeamsList))
   }
 };
 
