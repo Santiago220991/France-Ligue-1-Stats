@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useSelector } from 'react-redux/es/exports';
+import { Link } from 'react-router-dom';
 import './TeamList.css';
 
 const TeamList = () => {
@@ -27,12 +28,14 @@ const TeamList = () => {
         return false;
       }).map((element) => (
         <div className="team-element" key={element.team.name}>
-          <img src={element.team.logo} alt="team-logo" />
-          <p>{element.team.name}</p>
-          <p>
-            Rank
-            {element.rank}
-          </p>
+          <Link to={`/TeamStats/${element.team.name}`}>
+            <img src={element.team.logo} alt="team-logo" />
+            <p>{element.team.name}</p>
+            <p>
+              Rank
+              {element.rank}
+            </p>
+          </Link>
         </div>
       ))}
     </div>
