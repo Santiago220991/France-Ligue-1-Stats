@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useSelector } from 'react-redux/es/exports';
 import { Link } from 'react-router-dom';
+import { BsFillArrowRightCircleFill } from 'react-icons/bs';
 import './styles/TeamList.css';
 
 const TeamList = () => {
@@ -29,6 +30,7 @@ const TeamList = () => {
         }).map((element) => (
           <div className="team-element" key={element.team.name}>
             <Link className="link" to={`/TeamStats/${element.team.name}`}>
+              <BsFillArrowRightCircleFill className="right-arrow" />
               <img src={element.team.logo} alt="team-logo" />
               <p>{element.team.name}</p>
               <p>

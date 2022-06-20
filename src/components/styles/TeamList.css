@@ -23,15 +23,21 @@
 }
 
 .team-element{
+    display:flex;
+    flex-direction: column;
     text-align: center;
     flex-basis: 49%;
     border: solid white 1px;
-    padding-top: 16px;
 }
 
 .link{
     color: white;
     text-decoration: none;
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
 }
 
+.right-arrow{
+    justify-content: flex-end;
+}

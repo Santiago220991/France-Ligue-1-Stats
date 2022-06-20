@@ -50,7 +50,7 @@ const TeamStats = () => {
       </div>
     );
   }
-  return <div className="error-message">Return to Main Page</div>;
+  return <div className="error" />;
 };
 
 export default TeamStats;

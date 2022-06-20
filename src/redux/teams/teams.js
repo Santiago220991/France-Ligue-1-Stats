@@ -17,16 +17,21 @@ export const GetTeams = (list) => ({
 });
 
 export const GetTeamsAPI = () => async (dispatch) => {
-  const response = await fetch(URL, {
-    method: 'GET',
-    headers: {
-      'x-rapidapi-host': 'v3.football.api-sports.io',
-      'x-rapidapi-key': KEY,
-    },
-  });
-  const LeagueSeason = await response.json();
-  const TeamsList = LeagueSeason.response[0].league.standings[0];
-  dispatch(GetTeams(TeamsList));
+  if (localStorage.getItem('statics') === null) {
+    const response = await fetch(URL, {
+      method: 'GET',
+      headers: {
+        'x-rapidapi-host': 'v3.football.api-sports.io',
+        'x-rapidapi-key': KEY,
+      },
+    });
+    const LeagueSeason = await response.json();
+    const TeamsList = LeagueSeason.response[0].league.standings[0];
+    localStorage.setItem('statics', JSON.stringify(TeamsList));
+    dispatch(GetTeams(TeamsList));
+  } else {
+    dispatch(GetTeams(localStorage.getItem('statics')));
+  }
 };
 
 export default TeamsReducer;
