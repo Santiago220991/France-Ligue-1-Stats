@@ -1,6 +1,6 @@
 const GET_TEAMS = 'GET_TEAMS';
 const URL = 'https://v3.football.api-sports.io/standings?league=61&season=2021';
-const KEY = 'd3741d422b890a7d05b30f44d3752898';
+const KEY = '427479f309bcf990d28b6ba2c48e13eb';
 
 const TeamsReducer = (state = [], action) => {
   switch (action.type) {

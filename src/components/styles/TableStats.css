@@ -1,0 +1,27 @@
+.stats-table{
+    margin-top: 20px;
+}
+
+.home-stats{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: white;
+}
+
+.away-stats{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: white;
+}
+
+.stats-title{
+    flex-basis: 100%;
+    text-align: center;
+    border: solid white 2px;
+}
+
+.stats{
+    text-align: center;
+}

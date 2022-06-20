@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useSelector } from 'react-redux/es/exports';
 import { Link } from 'react-router-dom';
-import './TeamList.css';
+import './styles/TeamList.css';
 
 const TeamList = () => {
   const [Filter, setFilter] = useState('');
@@ -33,6 +33,7 @@ const TeamList = () => {
             <p>{element.team.name}</p>
             <p>
               Rank
+              {' '}
               {element.rank}
             </p>
           </Link>
