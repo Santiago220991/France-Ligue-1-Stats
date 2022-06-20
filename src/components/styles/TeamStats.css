@@ -25,3 +25,12 @@
     font-size: 24px;
     padding-bottom: 10px;
 }
+
+@keyframes showing {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}

@@ -4,6 +4,8 @@
     align-items: center;
     padding-left: 4%;
     padding-right: 4%;
+    animation-name: showing;
+    animation-delay: 2s;
 }
 
 .league-logo{
@@ -14,4 +16,14 @@
 .season{
     font-size: 1.2rem;
     color: white;
+    margin-bottom: 10px;
+}
+
+@keyframes showing {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
 }

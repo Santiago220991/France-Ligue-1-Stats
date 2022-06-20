@@ -16,3 +16,22 @@
     width: 50%;
     border-radius: 4px;
 }
+
+.teams{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.team-element{
+    text-align: center;
+    flex-basis: 49%;
+    border: solid white 1px;
+    padding-top: 16px;
+}
+
+.link{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+

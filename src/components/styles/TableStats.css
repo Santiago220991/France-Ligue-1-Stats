@@ -1,5 +1,9 @@
 .stats-table{
     margin-top: 20px;
+    margin-left: 4%;
+    margin-right: 4%;
+    animation-name: moving;
+    animation-duration: 2s;
 }
 
 .home-stats{
@@ -24,4 +28,13 @@
 
 .stats{
     text-align: center;
+}
+
+@keyframes moving {
+    from {
+        transform: translate(0px, -100px);
+    }
+    to {
+        transform: translate(0);
+    }
 }

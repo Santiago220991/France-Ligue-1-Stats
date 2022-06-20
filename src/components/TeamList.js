@@ -18,27 +18,28 @@ const TeamList = () => {
         <p>TEAMS</p>
         <input className="search-input" onChange={onChange} type="text" placeholder="Search.." />
       </div>
-      <div className="teams" />
-      {Store.filter((item) => {
-        if (Filter === '') {
-          return item;
-        } if (item.team.name.toLowerCase().includes(Filter.toLowerCase())) {
-          return item;
-        }
-        return false;
-      }).map((element) => (
-        <div className="team-element" key={element.team.name}>
-          <Link to={`/TeamStats/${element.team.name}`}>
-            <img src={element.team.logo} alt="team-logo" />
-            <p>{element.team.name}</p>
-            <p>
-              Rank
-              {' '}
-              {element.rank}
-            </p>
-          </Link>
-        </div>
-      ))}
+      <div className="teams">
+        {Store.filter((item) => {
+          if (Filter === '') {
+            return item;
+          } if (item.team.name.toLowerCase().includes(Filter.toLowerCase())) {
+            return item;
+          }
+          return false;
+        }).map((element) => (
+          <div className="team-element" key={element.team.name}>
+            <Link className="link" to={`/TeamStats/${element.team.name}`}>
+              <img src={element.team.logo} alt="team-logo" />
+              <p>{element.team.name}</p>
+              <p>
+                Rank:
+                {' '}
+                {element.rank}
+              </p>
+            </Link>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
