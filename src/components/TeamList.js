@@ -20,6 +20,16 @@ const TeamList = () => {
         <input className="search-input" onChange={onChange} type="text" placeholder="Search.." />
       </div>
       <div className="teams" />
+      {Store.map((element) => (
+        <div className="team-element" key={element.team.name}>
+          <img src={element.team.logo} alt="team-logo" />
+          <p>{element.team.name}</p>
+          <p>
+            Rank
+            {element.rank}
+          </p>
+        </div>
+      ))}
     </div>
   );
 };
