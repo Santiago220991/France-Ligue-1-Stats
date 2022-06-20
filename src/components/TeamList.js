@@ -9,8 +9,6 @@ const TeamList = () => {
   const onChange = (e) => {
     const newFilter = e.target.value;
     setFilter(newFilter);
-    console.log(Store);
-    console.log(Filter);
   };
 
   return (
@@ -20,7 +18,14 @@ const TeamList = () => {
         <input className="search-input" onChange={onChange} type="text" placeholder="Search.." />
       </div>
       <div className="teams" />
-      {Store.map((element) => (
+      {Store.filter((item) => {
+        if (Filter === '') {
+          return item;
+        } if (item.team.name.toLowerCase().includes(Filter.toLowerCase())) {
+          return item;
+        }
+        return false;
+      }).map((element) => (
         <div className="team-element" key={element.team.name}>
           <img src={element.team.logo} alt="team-logo" />
           <p>{element.team.name}</p>
