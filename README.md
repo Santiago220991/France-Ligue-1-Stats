@@ -4,8 +4,8 @@
 
 > **This is a Single Page Application that shows the list of teams that belong to the France League 1 2021-2022. This project uses an API to get the data to show, it has the next features:**
 
-- Show the list of teams that contest on the France League 1.
-- Show the stats of each team during the constest.
+- Show the list of teams that contest in the France League 1 season 2021-2022.
+- Show the stats of each team during the contest.
 
 ## Built With
 
@@ -14,7 +14,7 @@
 - JavaScript
 - React
 - Redux
-- SpaceX API
+- API-FOOTBALL (3.9.2)
 
 ## Live Demo
 
@@ -50,7 +50,8 @@ Feel free to check the [issues page](https://github.com/Santiago220991/France-Li
 
 ## Acknowledgments
 
-- Original design idea by Microverse.
+- Original design idea by [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio)
+ 
 
 ## Show your support
 
