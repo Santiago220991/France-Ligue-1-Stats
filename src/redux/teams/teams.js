@@ -1,6 +1,6 @@
 const GET_TEAMS = 'GET_TEAMS';
 const URL = 'https://v3.football.api-sports.io/standings?league=61&season=2021';
-const KEY = '427479f309bcf990d28b6ba2c48e13eb';
+const KEY = 'f0a1caada57fe83725fb74aaec9aa0eb';
 
 const TeamsReducer = (state = [], action) => {
   switch (action.type) {
@@ -32,7 +32,7 @@ export const GetTeamsAPI = () => async (dispatch) => {
   } else {
     let TeamsList = localStorage.getItem('statics');
     TeamsList = JSON.parse(TeamsList);
-    dispatch(GetTeams(TeamsList))
+    dispatch(GetTeams(TeamsList));
   }
 };
 
