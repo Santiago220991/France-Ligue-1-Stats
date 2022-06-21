@@ -28,7 +28,7 @@ const TeamList = () => {
           }
           return false;
         }).map((element) => (
-          <div className="team-element" key={element.team.name}>
+          <div className="team-element" key={element.team.name} id={element.team.name}>
             <Link className="link" to={`/TeamStats/${element.team.name}`}>
               <BsFillArrowRightCircleFill className="right-arrow" />
               <img src={element.team.logo} alt="team-logo" />
