@@ -7,6 +7,8 @@
 - Show the list of teams that contest in the France League 1 season 2021-2022.
 - Show the stats of each team during the contest.
 
+![Ligue 1 France](https://user-images.githubusercontent.com/98363075/174894494-66804f6f-c135-4bd1-9b3a-4ccc5dca9c6f.png)
+
 ## Built With
 
 - HTML
@@ -18,7 +20,7 @@
 
 ## Live Demo
 
-[Javascript Capstone Live Demo](https:)
+[Javascript Capstone Live Demo](https://santiago-france-ligue1-stats.netlify.app/)
 
 ## Getting Started
 
