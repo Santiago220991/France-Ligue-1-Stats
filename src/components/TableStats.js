@@ -4,8 +4,6 @@ import './styles/TableStats.css';
 
 const TableStats = (props) => {
   const { home, away } = props;
-  console.log(home);
-  console.log(away);
   return (
     <div className="stats-table">
       <div className="home-stats">

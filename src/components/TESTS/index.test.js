@@ -1,11 +1,11 @@
 import renderer from 'react-test-renderer';
 import { Provider } from 'react-redux';
 import '@testing-library/jest-dom';
+import { render } from '@testing-library/react';
 import Store from '../../redux/configureStore';
 import Header from '../Header';
 import TeamList from './__mocks__/TeamList';
 import TeamStats from './__mocks__/TeamStats';
-import { render } from '@testing-library/react';
 
 describe('Testing React Components Rendering', () => {
   test('Testing Header Component', () => {
@@ -35,7 +35,7 @@ describe('Testing React Components Rendering', () => {
   test('There should be a Team in the list called Paris Saint Germain with rank 1', () => {
     const { container } = render(<Provider store={Store}><TeamList /></Provider>);
     expect(container).toHaveTextContent('Paris Saint Germain');
-    const rank=container.querySelector(".team-element")
-    expect(rank).toHaveTextContent("Rank: 1")
+    const rank = container.querySelector('.team-element');
+    expect(rank).toHaveTextContent('Rank: 1');
   });
 });

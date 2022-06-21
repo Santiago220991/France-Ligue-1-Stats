@@ -1,28 +1,28 @@
-.navbar{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-left: 4%;
-    padding-right: 4%;
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 4%;
+  padding-right: 4%;
 }
 
-.headerbtn{
-    width: 21px;
-    height: 30px;
-    color: white;
+.headerbtn {
+  width: 21px;
+  height: 30px;
+  color: white;
 }
 
-.backbtn{
-    width: 36px;
-    height: 35px;
-    color: white;
+.backbtn {
+  width: 36px;
+  height: 35px;
+  color: white;
 }
 
-.title{
-    font-size: 25px;
-    flex-grow: 0.7;
-    text-align: center;
-    color: white;
-    font-family: 'Gill Sans', sans-serif;
-    font-weight: bolder;
+.title {
+  font-size: 25px;
+  flex-grow: 0.7;
+  text-align: center;
+  color: white;
+  font-family: 'Gill Sans', sans-serif;
+  font-weight: bolder;
 }

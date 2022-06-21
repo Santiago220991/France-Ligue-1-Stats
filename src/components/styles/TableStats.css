@@ -1,40 +1,41 @@
-.stats-table{
-    margin-top: 20px;
-    margin-left: 4%;
-    margin-right: 4%;
-    animation-name: moving;
-    animation-duration: 2s;
+.stats-table {
+  margin-top: 20px;
+  margin-left: 4%;
+  margin-right: 4%;
+  animation-name: moving;
+  animation-duration: 2s;
 }
 
-.home-stats{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    color: white;
+.home-stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color: white;
 }
 
-.away-stats{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    color: white;
+.away-stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color: white;
 }
 
-.stats-title{
-    flex-basis: 100%;
-    text-align: center;
-    border: solid white 2px;
+.stats-title {
+  flex-basis: 100%;
+  text-align: center;
+  border: solid white 2px;
 }
 
-.stats{
-    text-align: center;
+.stats {
+  text-align: center;
 }
 
 @keyframes moving {
-    from {
-        transform: translate(0px, -100px);
-    }
-    to {
-        transform: translate(0);
-    }
+  from {
+    transform: translate(0, -100px);
+  }
+
+  to {
+    transform: translate(0);
+  }
 }

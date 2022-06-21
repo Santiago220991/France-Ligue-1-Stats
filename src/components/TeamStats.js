@@ -7,10 +7,8 @@ import './styles/TeamStats.css';
 const TeamStats = () => {
   const { teamname } = useParams();
   const Store = useSelector((store) => store.teams);
-  console.log(Store);
   const team = Store.filter((element) => element.team.name === teamname);
   const teaminfo = team[0];
-  console.log(teaminfo);
   if (teaminfo !== undefined) {
     const GoalDifference = teaminfo.all.goals.for - teaminfo.all.goals.against;
     return (

@@ -1,36 +1,37 @@
-.Header-Team-info{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    animation-name: showing;
-    animation-duration: 2s;
+.Header-Team-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-name: showing;
+  animation-duration: 2s;
 }
 
 .stats-logo {
-    width: 200px;
-    height: 200px;
-    margin-right: 2%;
+  width: 200px;
+  height: 200px;
+  margin-right: 2%;
 }
 
-.general-states{
-    color: white;
+.general-states {
+  color: white;
 }
 
-.general-states p{
-    margin-bottom: 0;
-    margin-top: 0;
+.general-states p {
+  margin-bottom: 0;
+  margin-top: 0;
 }
 
-.team-name-stats{
-    font-size: 24px;
-    padding-bottom: 10px;
+.team-name-stats {
+  font-size: 24px;
+  padding-bottom: 10px;
 }
 
 @keyframes showing {
-    from {
-        transform: scale(0);
-    }
-    to {
-        transform: scale(1);
-    }
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(1);
+  }
 }
