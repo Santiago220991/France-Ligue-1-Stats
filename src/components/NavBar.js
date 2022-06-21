@@ -7,7 +7,7 @@ import './styles/NavBar.css';
 
 const NavBar = () => (
   <div className="navbar">
-    <Link to="/"><div><AiOutlineLeft className="backbtn" /></div></Link>
+    <Link to="/" data-testid="backbtn"><div><AiOutlineLeft className="backbtn" /></div></Link>
     <p className="title">FRANCE LIGUE 1</p>
     <img className="headerbtn" src={micbtn} alt="mic-button" />
     <img className="headerbtn" src={configbtn} alt="config-button" />
