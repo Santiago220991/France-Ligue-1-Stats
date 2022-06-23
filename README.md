@@ -2,7 +2,7 @@
 
 # France League 1 
 
-> **This is a Single Page Application that shows the list of teams that belong to the France League 1 2021-2022. This project uses an API to get the data to show, it has the next features:**
+> **This is a Single Page Application that shows the list of teams that belong to the France League 1 2021-2022. This project uses an API to get the data,just the mobile version of the project was designed and has the next features:**
 
 - Show the list of teams that contest in the France League 1 season 2021-2022.
 - Show the stats of each team during the contest.
