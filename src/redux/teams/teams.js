@@ -18,17 +18,21 @@ export const GetTeams = (list) => ({
 
 export const GetTeamsAPI = () => async (dispatch) => {
   if (localStorage.getItem('statics') === null) {
-    const response = await fetch(URL, {
-      method: 'GET',
-      headers: {
-        'x-rapidapi-host': 'v3.football.api-sports.io',
-        'x-rapidapi-key': KEY,
-      },
-    });
-    const LeagueSeason = await response.json();
-    const TeamsList = LeagueSeason.response[0].league.standings[0];
-    localStorage.setItem('statics', JSON.stringify(TeamsList));
-    dispatch(GetTeams(TeamsList));
+    try {
+      const response = await fetch(URL, {
+        method: 'GET',
+        headers: {
+          'x-rapidapi-host': 'v3.football.api-sports.io',
+          'x-rapidapi-key': KEY,
+        },
+      });
+      const LeagueSeason = await response.json();
+      const TeamsList = LeagueSeason.response[0].league.standings[0];
+      localStorage.setItem('statics', JSON.stringify(TeamsList));
+      dispatch(GetTeams(TeamsList));
+    } catch (error) {
+      console.log(error);
+    }
   } else {
     let TeamsList = localStorage.getItem('statics');
     TeamsList = JSON.parse(TeamsList);
