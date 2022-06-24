@@ -20,6 +20,19 @@
 .teams {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+}
+
+.team-element:nth-child(4n-1){
+  background-color: #224586;
+  animation-name: entering-right;
+  animation-duration: 1s;
+}
+
+.team-element:nth-child(4n-2){
+  background-color: #224586;
+  animation-name: entering-right;
+  animation-duration: 1s;
 }
 
 .team-element {
@@ -27,6 +40,8 @@
   flex-direction: column;
   text-align: center;
   flex-basis: 49%;
+  animation-name: entering-left;
+  animation-duration: 1s;
   border: solid white 1px;
 }
 
@@ -53,4 +68,22 @@
   width: 150px;
   height: 150px;
   align-self: center;
+}
+
+@keyframes entering-right {
+  from{
+    transform: translate(500px);
+  }
+  to{
+    transform: translate(0px);
+  }
+}
+
+@keyframes entering-left {
+  from{
+    transform: translate(-500px);
+  }
+  to{
+    transform: translate(0px);
+  }
 }
