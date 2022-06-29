@@ -23,18 +23,6 @@
   justify-content: center;
 }
 
-.team-element:nth-child(4n-1){
-  background-color: #224586;
-  animation-name: entering-right;
-  animation-duration: 1s;
-}
-
-.team-element:nth-child(4n-2){
-  background-color: #224586;
-  animation-name: entering-right;
-  animation-duration: 1s;
-}
-
 .team-element {
   display: flex;
   flex-direction: column;
@@ -43,6 +31,18 @@
   animation-name: entering-left;
   animation-duration: 1s;
   border: solid white 1px;
+}
+
+.team-element:nth-child(4n-1) {
+  background-color: #224586;
+  animation-name: entering-right;
+  animation-duration: 1s;
+}
+
+.team-element:nth-child(4n-2) {
+  background-color: #224586;
+  animation-name: entering-right;
+  animation-duration: 1s;
 }
 
 .link {
@@ -71,19 +71,21 @@
 }
 
 @keyframes entering-right {
-  from{
+  from {
     transform: translate(500px);
   }
-  to{
-    transform: translate(0px);
+
+  to {
+    transform: translate(0);
   }
 }
 
 @keyframes entering-left {
-  from{
+  from {
     transform: translate(-500px);
   }
-  to{
-    transform: translate(0px);
+
+  to {
+    transform: translate(0);
   }
 }
