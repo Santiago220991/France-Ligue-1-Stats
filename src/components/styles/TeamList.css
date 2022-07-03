@@ -23,6 +23,11 @@
   justify-content: center;
 }
 
+.err-msg {
+  color: rgb(175, 6, 6);
+  text-align: center;
+}
+
 .team-element {
   display: flex;
   flex-direction: column;

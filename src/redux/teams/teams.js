@@ -25,6 +25,10 @@ export const GetTeamsAPI = () => async (dispatch) => {
         'x-rapidapi-key': KEY,
       },
     });
+    if (!response.ok) {
+      const teams = document.querySelector('.teams');
+      teams.innerHTML = `<p class="err-msg"> Try again please, refresh the page. Error: ${response.status} <p>`;
+    }
     const LeagueSeason = await response.json();
     const TeamsList = LeagueSeason.response[0].league.standings[0];
     localStorage.setItem('statics', JSON.stringify(TeamsList));
